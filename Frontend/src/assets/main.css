@@ -1,0 +1,114 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+a { text-decoration: none; color: inherit; }
+
+/* Layout */
+.app { display: flex; min-height: 100vh; }
+.main { flex: 1; }
+.content { padding: 20px; }
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background: #020617;
+  border-right: 1px solid #1e293b;
+  padding: 20px;
+  min-height: 100vh;
+}
+.sidebar h2 { margin-bottom: 20px; }
+.sidebar a {
+  display: block;
+  padding: 10px 12px;
+  margin: 6px 0;
+  background: #0f172a;
+  border-radius: 6px;
+}
+.sidebar a:hover { background: #1e293b; }
+.sidebar a.router-link-active { background: #2563eb; }
+
+/* Navbar */
+.navbar {
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar input {
+  background: #334155;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: white;
+}
+
+/* Page Heading */
+h1.page-title { margin-bottom: 16px; font-size: 22px; }
+
+/* Card */
+.card {
+  background: #1e293b;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Grid */
+.grid { display: grid; gap: 12px; }
+.grid-2 { grid-template-columns: repeat(2,1fr); }
+.grid-3 { grid-template-columns: repeat(3,1fr); }
+.grid-4 { grid-template-columns: repeat(4,1fr); }
+
+/* Inputs */
+.input {
+  background: #334155;
+  border: 1px solid #475569;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 6px;
+  width: 100%;
+}
+.input:focus { outline: none; border-color: #2563eb; }
+
+/* Buttons */
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn:hover { background: #1d4ed8; }
+.btn-green { background: #16a34a; }
+.btn-green:hover { background: #15803d; }
+.btn-red { background: #dc2626; }
+.btn-red:hover { background: #b91c1c; }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; background: #1e293b; border-radius: 8px; overflow: hidden; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #334155; }
+th { background: #0f172a; }
+
+/* Error */
+.error { color: #f87171; font-size: 13px; margin-top: 4px; }
+
+/* Login */
+.auth {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  background: #0f172a;
+}
+.auth-box {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+  width: 360px;
+}
+.auth-box h1 { margin-bottom: 18px; text-align: center; }
+.auth-box .input { margin-bottom: 10px; }
